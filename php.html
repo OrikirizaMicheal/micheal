@@ -1,0 +1,47 @@
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve the submitted email and password
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    // Validate the email and password (you may add more validation here)
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Email is valid, proceed with login authentication
+        // You can add your authentication logic here
+        
+        // For demonstration purposes, let's just echo the submitted email and password
+        echo "Email: " . $email . "<br>";
+        echo "Password: " . $password;
+    } else {
+        // Email is invalid, display an error message
+        echo "Invalid email address!";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ECO-CYCLE</title>
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <h1>ECO-CYCLE</h1>
+    
+    <!-- Login form -->
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="email">ENTER YOUR EMAIL:</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <label for="password">ENTER YOUR PASSWORD:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Other HTML content -->
+</body>
+</html>

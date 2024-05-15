@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECO-CYCLE</title>
+  <style>
+    /* Styles for the menu and content sections */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #00a651;
+      text-align: center;
+    }
+    
+    .menu {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .menu a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    
+    .menu a:hover {
+      background-color: #00a651;
+      color: #fff;
+    }
+    
+    .content-section {
+      display: none;
+      padding: 20px;
+    }
+    
+    .recycling {
+      color: #ff7f50;
+    }
+    
+    .reuse {
+      color: #ffbf00;
+    }
+    
+    .services {
+      color: #00ff2a;
+    }
+  </style>
+  <script>
+    // JavaScript to toggle display of content sections
+    function showSection(sectionId) {
+      var sections = document.getElementsByClassName('content-section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+      }
+      
+      var section = document.getElementById(sectionId);
+      section.style.display = 'block';
+    }
+  </script>
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>Logo in Corner</title>
+<style>
+    /* CSS for positioning the logo */
+    .logo {
+      width: 50px;
+      height: auto;
+        position: absolute; 
+        top: 1%; 
+        left: 1cap; 
+    }
+</style>
+</head>
+<body>
+    <img src="img3.png" alt="Logo" class="logo">
+
+</body>
+</html>
+  <h1>ECO-CYCLE MIKE</h1>
+  <img src="img8.png" alt="img"style="width:100%";height:auto;">
+  <div class="menu">
+    <ul>
+      <li><a href="#" onclick="showSection('login')">LOGIN</a></li>
+      <li><a href="#" onclick="showSection('about')">ABOUT US</a></li>
+      <li><a href="#" onclick="showSection('eco-living')">ECO-LIVING</a></li>
+      <li><a href="#" onclick="showSection('services')">SERVICES OFFERED</a></li>
+    </ul>
+  </div>
+  
+  <main>
+
+    <section id="login" class="content-section">
+      <h2>Login</h2>
+      <h3>LOG IN</h3>
+      <h4>ENTER YOUR ECO DETAILS TO CONTINUE</h4>
+      <div>
+        <label for="email">ENTER YOUR EMAIL:</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <div>
+        <label for="password">ENTER YOUR PASSWORD:</label>
+        <input type="password" id="password" name="password">
+        
+        <div class="field">
+          <form action="process_Login.php"method="post">
+          <input type="submit"value="Login">
+        </div>
+      </form>
+
+      </div>
+      <div class="I-DONT-HAVE-ACCOUNT">
+        <p>I DONT HAVE AN ACCOUNT - <a href="#">SIGN UP</a></p>
+      </div>
+    </section> 
+    <section id="about" class="content-section">
+      <h2>About Us</h2>
+      <!-- Add information about your website or organization here -->
+      <img src="img1.jpg"</img>
+      <img src="img2.jpg"</img>
+    </section>
+    
+    <section id="eco-living" class="content-section">
+      <h2>Eco-Living</h2>
+      <div class="recycling">
+        <h3>RECYCLING</h3>
+        <p>Recycling: Just do it!​</p>
+        <p>Recycling products such as bottles, cans, and paper has been possible for decades in the US, but we still have a long way to go to fully utilize the potential and value of recycling programs. Nationally, we recycle only 32% of what we discard. State numbers are even worse: Colorado’s recycling rate currently stands at a mere 16%. For the sake of the economy, our natural resources, the climate, and future generations, we must do better.</p>
+        <p>Why should we all be recycling?</p>
+        <p>Recycling is one of the easiest actions we can take to work toward a sustainable future and to generate big environmental benefits. When you recycle as much as you can (after you refuse, reduce, and reuse, of course), you contribute to a cyclical economy that supports green jobs, prevents pollution, saves energy, combats climate change, and lessens our dependence on natural resources like trees, natural gas, and petroleum.</p>
+      </div>
+      
+      <div class="reuse">
+        
+
+        <h3>REUSE, REPAIR & SHARE</h3>
+        <p>Reuse,Repair & Share</p>
+        <p>Reusables as a Solution to Single-Use Disposables</p>
+        <p>Repair Resources</p>
+        <p>Before you recycle, before you buy new, try reusing, repairing, and sharing.</p>
+        <p>It’s always a good idea to recycle, but it’s an even better idea to keep materials, particularly durable products, in circulation longer through reuse. Not only is it good for the planet, it can save you time and money. You can extend the “reuse life” of an item by repairing it when needed, and sharing it with friends, family, or your community!</p>
+        <p>There are countless ways you can choose to reuse in your daily life—everything from carrying your own refillable water bottle, to repairing a broken item, to donating good-quality clothing and household items. Reuse is not only what you do when you have something you no longer want, it is also what you do when you need something. Shop secondhand stores or browse online exchange sites before you head to the store to buy something new. When you do buy something, make sure it’s a decent quality, durable product that will last, rather than a cheap disposable you’ll have to replace much sooner.</p>
+        <p>One of the benefits to reusing, repairing, and sharing is that it often supports local organizations and businesses. Use the guides below to support a local reuse and sharing economy.</p>
+      </div>
+        
+      
+
+    </section>
+    
+    <section id="services" class="content-section">
+      <h2>Services Offered</h2>
+      <div class="services">
+        <h3>Zero Waste Consulting</h3>
+        <p>Let’s reimagine what being a leader in sustainability can mean for your organization and community.</p>
+      </div>
+      
+      <div class="services">
+        <h3>Zero Waste Hauling & Consulting</h3>
+        <p>Zero Waste Hauling</p>
+        <p>What can our consulting do for your business?</p>
+        <p>Let us help you strengthen your brand, increase employee satisfaction, support your community, and reduce costs—all while conserving natural resources, combating climate change, and working toward a more just and sustainable world.</p>
+      </div>
+      
+      <div class="services">
+        <h3>Consulting Services</h3>
+        <p>Engagements with Eco-Cycle can be tailored to your needs. We offer assistance with:</p>
+        <ul>
+          <li>Improving Zero Waste systems</li>
+          <li>Internal collection system set-up and recommendations</li>
+          <li>Identification and collection of hard-to-recycle materials</li>
+          <li>Building community and networking</li>
+          <li>Mixers and networking with like-minded businesses</li>
+          <li>Material and industry focus groups</li>
+          <li>Researching new opportunities</li>
+          <li>Landfill diversion research</li>
+          <li>Sustainability plan development</li>
+          <li>Packaging and design solutions</li>
+          <li>Industry/competitor analysis</li>
+          <li>Connection to regional service providers</li>
+        </ul>
+        <p>Not sure where to begin?</p>
+        <p>Eco-Cycle offers initial walk-throughs with clients to understand existing conditions and to uncover opportunities for increased diversion. This first step is a great way to start down the path to Zero Waste. We also offer sustainability assessments to uncover the specific needs of your company.</p>
+        <p>Email orikirizamic@ecocycle.org to learn how we can work together!</p>
+      </div>
+    </section>
+    <style>
+      body {
+        background-color: rgb(192, 45, 45); /* Replace with your desired background color */
+      }
+    </style>
+  
+  
+  
+    
+      
+        <footer>
+            <div>
+
+
+                <a href="https://www.youtube.com/your-channel" target="_blank">
+                    <img src="img5.png" alt="YouTube" style="width: 5%; height: auto;">
+                </a>
+                <a href="https://twitter.com/your-twitter" target="_blank">
+                    <img src="image4.png" alt="Twitter" style="width: 5%; height: auto;">
+                </a>
+            </div>
+        </footer>
+    </body>
+    </html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow Us</title>
+  <style>
+    .follow-us {
+      position: Not fixed;
+      bottom: 10px; /* Adjust this value to change vertical position */
+      left: 10px; /* Adjust this value to change horizontal position */
+      font-size: 100%;
+      font-family: 'Times New Roman', Times, serif, ;
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="follow-us">FOLLOW US ON</div>
+
+
+
+
+</body>
+</html>
+
+
+  </main>
+</body>
+</html>
